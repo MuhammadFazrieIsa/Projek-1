@@ -1,0 +1,53 @@
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background-image: url();
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    animation: change 30s infinite ease-in-out;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+}
+
+.content h1 {
+    color: #fff;
+    font-size: 60px;
+    letter-spacing: 15px;
+}
+
+.content h1 span {
+    color: #111;
+}
+
+.content a {
+    background: #85c1ee;
+    padding: 10px 24px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.content a:hover {
+    background: #034e88;
+    color: #fff;
+}
+
+@keyframes change {
+    0% {
+        background-image: linear-gradient(rgba(26, 26, 26, 0.9), rgba(59, 56, 56, 0.9)), url(https://akcdn.detik.net.id/community/media/visual/2022/09/23/ilustrasi-pendidikan.jpeg?w=700&q=90);
+    }
+    100% {
+        background-image: linear-gradient(rgba(26, 26, 26, 0.9), rgba(59, 56, 56, 0.9)), url(https://polteksci.ac.id/blog/wp-content/uploads/2024/03/speaker-stage-front-room-with-re-900x570.jpg);
+    }
+}
